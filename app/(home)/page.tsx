@@ -10,7 +10,7 @@ import { db } from "../_lib/prisma";
 
 const Home = async () => {
 
-  // const barberhops = await db.barbershop.findMany({})
+  const barberhops = await db.barbershop.findMany({})
 
   return (
     <>
@@ -30,15 +30,14 @@ const Home = async () => {
 
         <div>
           <h2 className="uppercase text-[#838896] text-sm ">recomendados</h2>
-          <div>
-            {/* {barberhops.map((barbeshop) => (
+          <div className="flex items-center gap-4 overflow-x-auto w-full [&::-webkit-scrollbar]:hidden">
+            {barberhops.map((barbeshop) => (
               <BarberhopItem
                 key={barbeshop.id}
                 barbeshop={barbeshop}
               />
-            ))} */}
+            ))}
           </div>
-
         </div>
       </main>
     </>
