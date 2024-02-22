@@ -51,7 +51,6 @@ const Home = async () => {
             ))}
           </div>
         </div>
-
       </main>
     </>
   );
