@@ -6,8 +6,8 @@ const Search = () => {
   return (
     <div className="flex items-center gap-3">
       <Input placeholder="Buscar" />
-      <Button className="p-0 w-10 h-10">
-        <SearchIcon className="h-4 w-4" />
+      <Button className="">
+        <SearchIcon className="h-6 w-6" />
       </Button>
 
     </div>

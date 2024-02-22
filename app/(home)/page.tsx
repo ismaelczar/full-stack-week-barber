@@ -28,8 +28,8 @@ const Home = async () => {
           <BookingCard />
         </div>
 
-        <div>
-          <h2 className="uppercase text-[#838896] text-sm ">recomendados</h2>
+        <div className="mt-6">
+          <h2 className="uppercase mb-3 text-[#838896] text-sm ">recomendados</h2>
           <div className="flex items-center gap-4 overflow-x-auto w-full [&::-webkit-scrollbar]:hidden">
             {barberhops.map((barbeshop) => (
               <BarberhopItem
@@ -39,6 +39,19 @@ const Home = async () => {
             ))}
           </div>
         </div>
+
+        <div className="mt-6 mb-[4.5rem]">
+          <h2 className="uppercase mb-3 text-[#838896] text-sm ">populares</h2>
+          <div className="flex items-center gap-4 overflow-x-auto w-full [&::-webkit-scrollbar]:hidden">
+            {barberhops.map((barbeshop) => (
+              <BarberhopItem
+                key={barbeshop.id}
+                barbeshop={barbeshop}
+              />
+            ))}
+          </div>
+        </div>
+
       </main>
     </>
   );
