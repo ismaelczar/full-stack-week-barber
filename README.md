@@ -29,7 +29,7 @@ Você pode optar por executar a aplicação usando o Docker ou [Supabase](https:
 $ git clone https://github.com/ismaelczar/fullstackweek-barber.git
 
 # Vá para a pasta da aplicação Front End
-$ cd fullstackweek-barber
+$ cd full-stack-week-barber
 
 # Instale as dependências
 $ npm i
