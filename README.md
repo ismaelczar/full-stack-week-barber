@@ -48,9 +48,7 @@ $ npm run dev
 
 ## 🛠 Technologies
 
-As seguintes ferramentas foram usadas na construção do projeto:
-
-#### **Website**  
+As seguintes ferramentas foram usadas na construção do projeto: 
 
 -   **[Next.js](https://nextjs.org/)**
 -   **[TypeScript](https://www.typescriptlang.org/)**
