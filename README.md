@@ -48,9 +48,7 @@ $ npm run dev
 
 ## 🛠 Technologies
 
-As seguintes ferramentas foram usadas na construção do projeto:
-
-#### **Website**  
+As seguintes ferramentas foram usadas na construção do projeto: 
 
 -   **[Next.js](https://nextjs.org/)**
 -   **[TypeScript](https://www.typescriptlang.org/)**
@@ -58,6 +56,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 -   **[Lucide](https://lucide.dev/)**
 -   **[Chadcn/ui](https://ui.shadcn.com/)**
 -   **[Prisma](https://www.prisma.io/)**
+-   **[Next Auth.js](https://next-auth.js.org/)**
 
 
 > Para mais detalhes das dependências gerais da aplicação veja o arquivo  [package.json](./package.json)
