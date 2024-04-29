@@ -3,13 +3,21 @@
 import { Button } from "@/app/_components/ui/button";
 import { Card, CardContent } from "@/app/_components/ui/card";
 import { Service } from "@prisma/client";
+import { signIn } from "next-auth/react";
 import Image from "next/image";
 
 interface ServiceProps {
   service: Service
+  isAuthenticated: boolean
 }
 
-const ServiceItem = ({ service }: ServiceProps) => {
+const ServiceItem = ({ service, isAuthenticated }: ServiceProps) => {
+
+  function handleBookingClick() {
+    if (!isAuthenticated) (
+      signIn('google')
+    )
+  }
   return (
     <Card>
       <CardContent className="p-3">
@@ -28,7 +36,7 @@ const ServiceItem = ({ service }: ServiceProps) => {
                 currency: 'BRL',
 
               }).format(Number(service.price))}</p>
-              <Button variant="outline" className="bg-secondary">Reservar</Button>
+              <Button variant="outline" className="bg-secondary" onClick={handleBookingClick}>Reservar</Button>
             </div>
           </div>
         </div>
